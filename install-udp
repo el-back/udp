@@ -10,11 +10,11 @@ ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
 # install udp-custom
 echo downloading udp-custom
-wget -O /root/udp/udp-custom 
+wget -O /root/udp/udp-custom https://raw.githubusercontent.com/el-back/udp/main/udp-custom
 chmod +x /root/udp/udp-custom
 
 echo downloading default config
-wget -O /root/udp/config.json
+wget -O /root/udp/config.json https://raw.githubusercontent.com/el-back/udp/main/config.json
 chmod 644 /root/udp/config.json
 
 if [ -z "$1" ]; then
